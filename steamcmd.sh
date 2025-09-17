@@ -2,7 +2,9 @@
 
 # Set Steam root explicitly
 STEAMROOT="/home/vadrigar/.steam"
-mkdir -p "$STEAMROOT"
+mkdir -p "$STEAMROOT/Steam"
+export STEAM_LOGDIR="$STEAMROOT/Steam/logs"
+mkdir -p "$STEAM_LOGDIR"
 
 STEAMCMD=$(basename "$0" .sh)
 
